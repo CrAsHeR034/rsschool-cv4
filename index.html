@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>My resume</title>
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- main content -->
+      <div class="main-content">
+        <!-- about me -->
+        <div class="about-me">
+          <h4 class="Front-End-Developer">Student</h4>
+          <h1 class="name">Oleksii Keidaliuk</h1>
+          <p class="my-descr">
+            4th year student, studying at the State University of Intelligent
+            Technologies and Communications. Faculty: computer technologies.
+          </p>
+
+          <p class="my-descr">
+            I have a desire to study and work, I know PC well, I learn quickly.
+          </p>
+
+          <p class="my-descr">
+            I want to become a frontend developer. I have always wanted to
+            create digital products. There are a couple of interesting projects
+            in my profile.
+          </p>
+          <p class="my-descr">I know how to work in a team.</p>
+          <p class="my-descr">
+            I participate in various online webinars, courses to try myself in
+            new professions and learn new things.
+          </p>
+        </div>
+        <!-- my projects -->
+        <div class="pr-conteiner">
+          
+          <h3 class="main-content-title">Projects</h3>
+          <ol class="pr-list">
+            <li class="pr-it">
+              <a
+                href="https://banderogus1ua.netlify.app"
+                class="pr-it-link"
+                target="_blank"
+                >https://banderogus1ua.netlify.app</a
+              ><span class="pr-it-description"
+                >...........................[ HTML5, CSS3, JS ]</span
+              >
+            </li>
+            <li class="pr-it">
+              <a
+                href="https://webstudio64.netlify.app"
+                class="pr-it-link"
+                target="_blank"
+                >https://webstudio64.netlify.app</a
+              ><span class="pr-it-description"
+                >.................................[ HTML5, CSS3 ]</span
+              >
+            </li>
+            <li class="pr-it">
+              <a
+                href="https://odesa-mycity.netlify.app"
+                class="pr-it-link"
+                target="_blank"
+                >https://odesa-mycity.netlify.app</a
+              ><span class="pr-it-description"
+                >.................................[ HTML5, CSS3, JS ]</span
+              >
+            </li>
+            <li class="pr-it">
+              <a
+                href="https://snake-game-fun1.netlify.app"
+                class="pr-it-link"
+                target="_blank"
+                >https://snake-game-fun1.netlify.app</a
+              ><span class="pr-it-description"
+                >.......................[ HTML5, CSS3, JS ]</span
+              >
+            </li>
+          </ol>
+        </div>
+        <!-- work exp -->
+        <div class="work-exp">
+          <h3 class="main-content-title">Work Experience</h3>
+          <!-- company 1 -->
+          <div class="com">
+            <h4 class="work-ex">
+              Junior Front-End Developer <span class="blue">GO IT</span>
+            </h4>
+            <p class="colr">April 2023 - up to now | Ukraine</p>
+            <ul class="ach-list">
+              <li class="ach">
+                Creating and maintaining web pages and applications using HTML,
+                CSS;
+              </li>
+              <li class="ach">
+                Developing interactive user interface features and elements,
+                such as forms, buttons, and animations;
+              </li>
+              <li class="ach">
+                Testing and debugging created components and applications to
+                ensure their proper operation and responsiveness;
+              </li>
+              <li class="ach">
+                Participating in team collaboration with other developers and
+                designers, as well as implementing modern development
+                technologies and methodologies such.
+              </li>
+            </ul>
+          </div>
+
+          <!-- company 2 -->
+          <!-- <div class="com">
+            <h4 class="work-ex">
+              Web Designer <span class="blue">Alpaca School</span>
+            </h4>
+            <p class="colr">April 2023 | Ukraine</p>
+            <p class="text">
+              Alpaca School is a project that provides training in programming
+              and web development. My role in the project was to design and
+              build the site. I worked in a team with other developers and
+              designers to create a user-friendly and intuitive site that allows
+              students to access learning resources.
+            </p class="text">
+            <p>My contribution to the project:</p>
+            <ul class="ach-list" >
+              <li class="ach">Website design and functionality development;</li>
+              <li class="ach">Development of web pages using HTML, CSS;</li>
+              <li class="ach">
+                Website optimization to improve loading speed and usability.
+              </li>
+            </ul>
+            <p class="text">
+              I have a passion for web development and constantly strive to
+              improve my skills in this area. I am ready to work in a team to
+              achieve common goals and create a quality product.
+            </p>
+          </div> -->
+          <!-- company 3 -->
+          <!-- <div class="com">
+            <h4 class="work-ex">
+              Manager <span class="blue">BestUA Corp.</span>
+            </h4>
+            <p class="colr">June 2014 - February 2015 | Ukraine</p>
+            <ul class="ach-list">
+              <li class="ach">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </li>
+              <li class="ach">Quis ipsum suspendisse ultrices gravida.</li>
+              <li class="ach">Risus commodo viverra maecenas.</li>
+            </ul>
+          </div> -->
+        </div>
+        <div>
+          <h3 class="main-content-title">Code Example</h3>
+          <p class="text">Button to enlarge images of JS</p>
+          <pre
+            id="pre"
+            class="text"
+          ><code>const modalButtons = document.querySelectorAll('.gallery-button');
+modalButtons.forEach(modalButton => {
+  modalButton.addEventListener('click', () => {
+    sliderElm.dataset.showIndex = modalButton.dataset.index;
+  });
+});
+
+const sliderElm = document.querySelector('.splide');
+const SLIDE_SPEED = 400;
+const slider = new Splide(sliderElm, {
+  type: 'fade',
+  rewind: true,
+  speed: SLIDE_SPEED,
+}).mount();
+
+MicroModal.init({
+  onShow: () => {
+    slider.options = {
+      speed: 0
+    };
+    slider.go(Number(sliderElm.dataset.showIndex));
+    slider.options = {
+      speed: SLIDE_SPEED
+    };
+  }
+});</code></pre>
+        </div>
+        <!-- Education -->
+        <div>
+          <h3 class="main-content-title">Education</h3>
+          <h4 class="work-ex">
+            <span class="blue"
+              >State University of Intelligent Technologies and
+              Communications</span
+            >
+          </h4>
+          <h5 class="managment">Сomputer technology</h5>
+          <p class="colr">September 2020 - up to now | Ukraine</p>
+        </div>
+      </div>
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <img src="./photo.jpg" alt="photo" width="370px" class="my-photo" />
+        <!-- contacts -->
+        <div class="contacts">
+          <h3 class="sibebar-title">Contacts</h3>
+          <p class="contacts-item">
+            <span class="contacts-type">C:</span>
+            <a href="tel:+38 888 888 88 88" class="tel">+38 888 888 88 88</a>
+          </p>
+          <p class="contacts-item">
+            <span class="contacts-type">E:</span>
+            <a href="mailto:keydalyuk@gmail.com" class="mail"
+              >keydalyuk@gmail.com</a
+            >
+          </p>
+        </div>
+        <!-- tech skils -->
+        <div class="tech-skils">
+          <h3 class="sidebar-title">Tech Skills</h3>
+
+          <ul class="skils-list">
+            <li class="skils"><span class="skils-list-items">HTML5</span></li>
+            <li class="skils"><span class="skils-list-items">CSS3</span></li>
+            <li class="skils"><span class="skils-list-items">C++</span></li>
+            <li class="skils"><span class="skils-list-items">Matlab</span></li>
+            <li class="skils">
+              <span class="skils-list-items">Math Cad</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Soft Skills -->
+        <div class="soft-skils">
+          <h3 class="sidebar-title">Soft Skills</h3>
+          <ul class="skils-list">
+            <li class="skils">
+              <span class="skils-list-items">Creativity</span>
+            </li>
+            <li class="skils"><span class="skils-list-items">Adapt</span></li>
+            <li class="skils">
+              <span class="skils-list-items">Time management</span>
+            </li>
+            <li class="skils">
+              <span class="skils-list-items">Teamwork</span>
+            </li>
+          </ul>
+          <!-- hard Skills -->
+          <div class="hard-skils">
+            <h3 class="sidebar-title">Hard Skills</h3>
+            <ul class="skils-list">
+              <li class="skils">
+                <span class="skils-list-items">Cloud computing</span>
+              </li>
+              <li class="skils">
+                <span class="skils-list-items">Artificial intelligence</span>
+              </li>
+              <li class="skils">
+                <span class="skils-list-items">Analytical justification</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Languages -->
+        <div class="soft-skils">
+          <h3 class="sidebar-title">Languages</h3>
+          <ul class="skils-list">
+            <li class="skils">
+              <span class="skils-list-items">Ukrainian (Native)</span>
+            </li>
+            <li class="skils">
+              <span class="skils-list-items">Russian (Native)</span>
+            </li>
+            <li class="skils">
+              <span class="skils-list-items"
+                >English A2 (B1 in proccess...)</span
+              >
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <aside class="left"></aside>
+    </div>
+  </body>
+</html>
