@@ -162,11 +162,12 @@
             id="pre"
             class="text"
           ><code>const modalButtons = document.querySelectorAll('.gallery-button');
-modalButtons.forEach(modalButton => {
-  modalButton.addEventListener('click', () => {
+modalButtons.forEach(modalButton =&gt; {
+  modalButton.addEventListener('click', () =&gt; {
     sliderElm.dataset.showIndex = modalButton.dataset.index;
   });
 });
+            
 const sliderElm = document.querySelector('.splide');
 const SLIDE_SPEED = 400;
 const slider = new Splide(sliderElm, {
@@ -174,8 +175,9 @@ const slider = new Splide(sliderElm, {
   rewind: true,
   speed: SLIDE_SPEED,
 }).mount();
+            
 MicroModal.init({
-  onShow: () => {
+  onShow: () =&gt; {
     slider.options = {
       speed: 0
     };
