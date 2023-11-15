@@ -167,7 +167,6 @@ modalButtons.forEach(modalButton => {
     sliderElm.dataset.showIndex = modalButton.dataset.index;
   });
 });
-
 const sliderElm = document.querySelector('.splide');
 const SLIDE_SPEED = 400;
 const slider = new Splide(sliderElm, {
@@ -175,7 +174,6 @@ const slider = new Splide(sliderElm, {
   rewind: true,
   speed: SLIDE_SPEED,
 }).mount();
-
 MicroModal.init({
   onShow: () => {
     slider.options = {
@@ -221,7 +219,6 @@ MicroModal.init({
         <!-- tech skils -->
         <div class="tech-skils">
           <h3 class="sidebar-title">Tech Skills</h3>
-
           <ul class="skils-list">
             <li class="skils"><span class="skils-list-items">HTML5</span></li>
             <li class="skils"><span class="skils-list-items">CSS3</span></li>
