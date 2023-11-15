@@ -160,14 +160,14 @@ modalButtons.forEach(modalButton =&gt; {
   modalButton.addEventListener('click', () =&gt; {
     sliderElm.dataset.showIndex = modalButton.dataset.index;
   });
-});        
+});
 const sliderElm = document.querySelector('.splide');
 const SLIDE_SPEED = 400;
 const slider = new Splide(sliderElm, {
   type: 'fade',
   rewind: true,
   speed: SLIDE_SPEED,
-}).mount();       
+}).mount();
 MicroModal.init({
   onShow: () =&gt; {
     slider.options = {
